@@ -19,7 +19,7 @@ public class SubmitOrderTest extends BaseTest {
         ProductsPage productsPage = landingPage.loginApplication("test@shop.com", "TestShop1");
         productsPage.addProductToCart(adidas);
         productsPage.addProductToCart(zara);
-
+        //new comment
 //        ------ Go to CART, check if the products have been added -----------
         CartPage cartPage = productsPage.goToCartPage();
         List<WebElement> productsInCart = cartPage.getProductsFromCart();
