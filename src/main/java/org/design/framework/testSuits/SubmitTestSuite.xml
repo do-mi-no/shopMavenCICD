@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--<suite name="All Test Suite" parallel="methods" thread-count="4">-->
+    <suite name="All Test Suite" parallel="tests" thread-count="4">
+    <!--<suite name="All Test Suite">-->
+
+    <listeners>
+        <listener class-name="org.design.framework.testComponents.Listeners"/>
+    </listeners>
+
+    <test name="SUBMIT_ORDER_TESTS">
+        <classes>
+            <class name="org.design.framework.test.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+</suite>
