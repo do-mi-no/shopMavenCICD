@@ -39,6 +39,7 @@ public class BaseTest {
 
         if (browserName.toLowerCase().contains("chrome")) {
             ChromeOptions options = new ChromeOptions();
+            options.addArguments("--ignore-certificate-errors");
             WebDriverManager.chromedriver().setup();
             if (browserName.contains("headless")) {
                 options.addArguments("headless");
