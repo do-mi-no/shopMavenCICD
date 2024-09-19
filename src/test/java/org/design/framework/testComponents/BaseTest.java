@@ -86,7 +86,7 @@ public class BaseTest {
     public String getScreenshot(String testCaseName, WebDriver drv) {
         TakesScreenshot ts = (TakesScreenshot) drv;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String reportsPath = System.getProperty("user.dir") + "//reports//" + pngCount++ + "_" + testCaseName + ".png";
+        String reportsPath = System.getProperty("user.dir") + "//reports//" + testCaseName + "_" + pngCount++ + ".png";
         File file = new File(reportsPath);
         try {
             FileUtils.copyFile(source, file);
